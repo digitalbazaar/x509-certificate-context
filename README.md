@@ -1,10 +1,10 @@
-# Context Template Repository _(context-template)_
+# X509Certificate Context _(x509-certificate-context)_
 
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/context-template/Node.js%20CI)](https://github.com/digitalbazaar/context-template/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/context-template)](https://codecov.io/gh/digitalbazaar/context-template)
-[![NPM Version](https://img.shields.io/npm/v/context-template.svg)](https://npm.im/context-template)
+[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/x509-certificate-context/Node.js%20CI)](https://github.com/digitalbazaar/x509-certificate-context/actions?query=workflow%3A%22Node.js+CI%22)
+[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/x509-certificate-context)](https://codecov.io/gh/digitalbazaar/x509-certificate-context)
+[![NPM Version](https://img.shields.io/npm/v/x509-certificate-context.svg)](https://npm.im/x509-certificate-context)
 
-> A GitHub template repository for JSON-LD contexts.
+> A JSON-LD context for X.509 Certificates.
 
 ## Table of Contents
 
@@ -28,23 +28,23 @@ Requires Node.js 12+
 To install via NPM:
 
 ```
-npm install context-template
+npm install x509-certificate-context
 ```
 
 ## Usage
 
 ```js
-import exampleCtx from 'context-template';
+import exampleCtx from 'x509-certificate-context';
 // or
-const exampleCtx = require('context-template');
+const exampleCtx = require('x509-certificate-context');
 const {contexts, constants, appContextMap} = exampleCtx;
 
 exampleCtx.CONTEXT_URL
-// 'https://w3id.org/example/v1'
+// 'https://w3id.org/security/x509/v1'
 
 // Codec term map value for CBOR-LD
 exampleCtx.constants.CBORLD_CODEC_VALUE
-// 0x0..
+// 0x1F
 
 // get context data for a specific context
 exampleCtx.CONTEXT
